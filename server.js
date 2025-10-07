@@ -6,7 +6,6 @@ const app = express();
 const PORT = 3002;
 
 const API_URL = 'https://backend.psb.hosting';
-const API_TOKEN = 'JbUTdTAnkxT6XJbD7MaxxFYWTnbdeZV8l0eShp2NkgvU9sBiNRZvZKIpAroZdPHpK4H4F_WsHSrPZGX1kyYoWiIbXLaqFndaqx-wfa6GnrFYv_sWnziwfe8vYAsDBENSMG_Zl7q3_MjpbFFiVrDB3XG8kXDaobgX5sr1Kg';
 
 // Дозволяємо CORS для всіх запитів
 app.use(cors());
@@ -20,19 +19,7 @@ app.get('/api/order', async (req, res) => {
       method: 'get',
       url: `${API_URL}/order`,
       headers: {
-        'Authorization': API_TOKEN,
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'application/json, text/plain, */*',
-        'Accept-Language': 'en-US,en;q=0.9,uk;q=0.8',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Connection': 'keep-alive',
-        'Cache-Control': 'no-cache',
-        'Pragma': 'no-cache',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'same-origin',
-        'Referer': 'https://backend.psb.hosting/',
-        'Origin': 'https://backend.psb.hosting'
+        'Authorization': "5wBLu8g6mhRkXf1WySLOgiOmj5F2Go_F0x0VVN4ryh9xUPZhA2nzfEGG7FXeX_WJfQRLIMXowLkxh-PjfLJTQyyAZbB7ZxafiaXwZUwD_0tmur6Rt6lRe-71guOvcQnhoD8u3iXT3wi-dAostaxl93a7yFMwKEspujmANA",
       },
       timeout: 30000,
       validateStatus: function (status) {
